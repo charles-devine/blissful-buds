@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/blissful-buds/static/css/main.8fac9e97.css",
+    "main.js": "/blissful-buds/static/js/main.c45f48d7.js",
+    "static/media/gummies.PNG": "/blissful-buds/static/media/gummies.d10022cd0a4df93d2e53.PNG",
+    "static/media/edibles.PNG": "/blissful-buds/static/media/edibles.b6dea268ba0463d50498.PNG",
+    "static/media/weed_for_login.png": "/blissful-buds/static/media/weed_for_login.a908906fece03246b353.png",
+    "static/media/logo.PNG": "/blissful-buds/static/media/logo.4654333e282e15cc581b.PNG",
+    "index.html": "/blissful-buds/index.html",
+    "main.8fac9e97.css.map": "/blissful-buds/static/css/main.8fac9e97.css.map",
+    "main.c45f48d7.js.map": "/blissful-buds/static/js/main.c45f48d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fac9e97.css",
+    "static/js/main.c45f48d7.js"
+  ]
+}
