@@ -1,0 +1,11 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-brand {
+  margin-left: 100px;
+}
+
+.custom-search-input {
+  width: 1300px; /* Adjust the width as needed */
+}
