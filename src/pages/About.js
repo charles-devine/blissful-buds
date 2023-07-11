@@ -50,7 +50,7 @@ function Text() {
             </p>
 
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px' }}>
-                <Link to="/resources">
+                <Link to="/ressources">
                     <Button variant="primary" style={{ backgroundColor: 'black', color: '#f0f0f0', border: '1px solid #f0f0f0', fontSize: '12px', marginRight: '10px' }}>
                         More Resources
                     </Button>

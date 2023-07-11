@@ -1,28 +1,34 @@
-import { 
-  BrowserRouter as Router, 
-  Routes, 
-  Route
-} from 'react-router-dom'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Products from './pages/Products';
+import Login from './pages/Login';
+import FAQ from './pages/Faq';
+import Ressources from './pages/Ressources';
 
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Products from "./pages/Products"
-import Login from "./pages/Login"
-import FAQ from "./pages/Faq"
+import ResponsibleUse from './pages/ResponsibleUse'; 
+import LegalUse from './pages/LegalUse'; 
+import HealthEffects from './pages/HealthEffects';
+import Youth from './pages/Youth'; 
 
+function App() {
+  return (
+    <Routes basename={process.env.PUBLIC_URL}>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/faq" element={<FAQ />} />
 
-function App() { 
-  return ( 
-    <Router>
-      <Routes>
-        <Route path ="/" element={<Home />} />
-        <Route path ="/about" element={<About />} />
-        <Route path ="/products" element={<Products />} />
-        <Route path ="/login" element={<Login />} />
-        <Route path ="/faq" element={<FAQ />} />
-      </Routes>
-    </Router>
-  )
+      <Route path="/ressources" element={<Ressources />} />    
+      <Route path="/responsibleuse" element={<ResponsibleUse />} />
+      <Route path="/legaluse" element={<LegalUse />} />
+      <Route path="/healtheffects" element={<HealthEffects />} />
+      <Route path="/youth" element={<Youth />} />
+
+    </Routes>
+  );
 }
 
-export default App; 
+export default App;

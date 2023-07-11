@@ -10,6 +10,8 @@ import marijuana from '../templates/marijuana.png';
 import mind from '../templates/mind.png'; 
 import shop from '../templates/shop.png';
 
+import { Link } from 'react-router-dom';
+
 export default function InfoBox() {
 
     const containerStyle = {
@@ -65,18 +67,18 @@ export default function InfoBox() {
           <img src={marijuana} alt="Image 1" style={imageStyle} />
           <h3 style={titleStyle}>Are you familiar with cannabis?</h3>
           <p style={textStyle}>Learn more about the plant, its species, and various strains.</p>
-          <a href="/resources" className="btn btn-primary" style={buttonStyle}>Learn more</a>
+          <Link to="/ressources" className="btn btn-primary" style={buttonStyle}>Learn more</Link>
         </div>
         <div className="box" style={{ ...boxStyle, backgroundColor: 'rgb(173, 214, 255)' }}>
           <img src={mind} alt="Image 2" style={imageStyle} />
           <h3 style={titleStyle}>What you need to know</h3>
           <p style={textStyle}>Here is what you need to know before buying or using cannabis.</p>
-          <a href="/faq" className="btn btn-primary" style={buttonStyle}>Learn more</a>
+          <Link to="/faq" className="btn btn-primary" style={buttonStyle}>Learn more</Link>
         </div>
         <div className="box" style={{...boxStyle, backgroundColor: 'rgb(184, 232, 207)' }}>
           <img src={shop} alt="Image 3" style={imageStyle} />
           <h3 style={titleStyle}>Find a store near you</h3>
-          <a href="#" className="btn btn-primary" style={buttonStyle}>Search</a>
+          <Link to="/" className="btn btn-primary" style={buttonStyle}>Learn more</Link>
         </div>
       </div>
     );

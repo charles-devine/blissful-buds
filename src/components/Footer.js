@@ -21,7 +21,6 @@ export default function Footer() {
   
     return (
       <footer style={footerStyle}>
-        <p style={textStyles}>This is a simple footer.</p>
         <p style={textStyles}>© 2023 Blissful Buds. All rights reserved.</p>
       </footer>
     );
