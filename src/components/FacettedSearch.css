@@ -1,0 +1,44 @@
+.facetted-search-container {
+    display: flex;
+    align-items: flex-start;
+    border-right: 1px solid #ccc; /* Add a thin line on the right side of the column */
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px; /* Add some space between the column and the line */
+    margin-top: 10px; 
+
+  }
+  
+  /* Add styles for the checkboxes */
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Add a wrapper for the checkboxes to control the width */
+  .checkbox-wrapper {
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  /* Add styles for the product list container */
+  .product-list-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    padding-left: 20px; /* Add some space between the line and the product list */
+  }
+  
+  /* Add the thin line to the right of the column */
+  .checkbox-column::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-right: 1px solid #ccc; /* Add a thin line on the right side of the column */
+  }
+  
