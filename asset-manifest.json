@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/blissful-buds/static/css/main.8477c41b.css",
-    "main.js": "/blissful-buds/static/js/main.db8a1412.js",
+    "main.css": "/blissful-buds/static/css/main.03c6aadb.css",
+    "main.js": "/blissful-buds/static/js/main.8b3667cd.js",
     "static/media/gummies.PNG": "/blissful-buds/static/media/gummies.d10022cd0a4df93d2e53.PNG",
     "static/media/edibles.PNG": "/blissful-buds/static/media/edibles.b6dea268ba0463d50498.PNG",
     "static/media/weed_for_login.png": "/blissful-buds/static/media/weed_for_login.a908906fece03246b353.png",
     "static/media/logo.PNG": "/blissful-buds/static/media/logo.4654333e282e15cc581b.PNG",
     "index.html": "/blissful-buds/index.html",
-    "main.8477c41b.css.map": "/blissful-buds/static/css/main.8477c41b.css.map",
-    "main.db8a1412.js.map": "/blissful-buds/static/js/main.db8a1412.js.map"
+    "main.03c6aadb.css.map": "/blissful-buds/static/css/main.03c6aadb.css.map",
+    "main.8b3667cd.js.map": "/blissful-buds/static/js/main.8b3667cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8477c41b.css",
-    "static/js/main.db8a1412.js"
+    "static/css/main.03c6aadb.css",
+    "static/js/main.8b3667cd.js"
   ]
 }
