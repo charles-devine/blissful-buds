@@ -27,14 +27,14 @@ const AllProductsPage = () => {
             <div className="facetted-search">
             <FacettedSearch
               categories={[
-                'dried flower',
-                'edibles',
-                'pre-rolls',
-                'vapes',
-                'extracts',
-                'concentrates',
-                'beverages',
-                'topicals',
+                ' dried flower',
+                ' edibles',
+                ' pre-rolls',
+                ' vapes',
+                ' extracts',
+                ' concentrates',
+                ' beverages',
+                ' topicals',
               ]}
               onFilterChange={handleFilterChange}
             />

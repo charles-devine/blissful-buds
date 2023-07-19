@@ -1,32 +1,22 @@
-// ProductList.js
 import React from 'react';
 
 const ProductList = ({ products }) => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Product Name</th>
-          <th>Category</th>
-          <th>THC %</th>
-          <th>CBD %</th>
-          <th>Price ($)</th>
-          <th>Add</th>
-        </tr>
-      </thead>
-      <tbody>
-        {products.map((product) => (
-          <tr key={product.id}>
-            <td>{product.name}</td>
-            <td>{product.category}</td>
-            <td>{product.thc}</td>
-            <td>{product.cbd}</td>
-            <td>{product.price}</td>
-            <td>+</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {products.map((product) => (
+        <div key={product.id} style={{ width: '100px', margin: '10px' }}>
+          <div>
+            <img src={product.src} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', marginBottom: '10px' }} />
+            <p style={{ fontWeight: 'bold' }}>{product.name}</p>
+            <p style={{fontSize: '10px'}}> Category: {product.category}</p>
+            <p>{product.strain}</p>
+            <p style={{fontSize: '10px'}}> THC/CBD: {product.thc + '-' + product.cbd}</p>
+            <p>${product.price}</p>
+          </div>
+          <button>Add</button>
+        </div>
+      ))}
+    </div>
   );
 };
 
