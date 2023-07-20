@@ -11,6 +11,7 @@ import ResponsibleUse from './pages/ResponsibleUse';
 import LegalUse from './pages/LegalUse'; 
 import HealthEffects from './pages/HealthEffects';
 import Youth from './pages/Youth'; 
+import Contact from './pages/Contact'; 
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Route path="/legaluse" element={<LegalUse />} />
       <Route path="/healtheffects" element={<HealthEffects />} />
       <Route path="/youth" element={<Youth />} />
+
+      <Route path="/contact" element={<Contact />} />
 
     </Routes>
   );

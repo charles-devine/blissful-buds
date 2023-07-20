@@ -8,7 +8,7 @@ const ProductList = ({ products }) => {
           <div>
             <img src={product.src} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover', marginBottom: '10px' }} />
             <p style={{ fontWeight: 'bold' }}>{product.name}</p>
-            <p style={{fontSize: '10px'}}> Category: {product.category}</p>
+            <p style={{fontSize: '10px'}}> {product.category}</p>
             <p>{product.strain}</p>
             <p style={{fontSize: '10px'}}> THC/CBD: {product.thc + '-' + product.cbd}</p>
             <p>${product.price}</p>

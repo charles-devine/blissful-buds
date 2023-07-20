@@ -2,31 +2,34 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    border-right: 1px solid #ccc; /* Add a thin line on the right side of the checkboxes */
+    margin-right: 10px
   }
   
   .checkbox-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 10px; /* Add some space between the column and the line */
     margin-top: 10px;
+
   }
   
   /* Add styles for the checkboxes */
   label {
     margin-bottom: 5px;
     margin-right: 10px;
+    
   }
   
   /* Add a wrapper for the checkboxes to control the width */
   .checkbox-wrapper {
     width: 200px; /* Adjust the width as needed */
+
   }
   
   /* Add a 10px margin between the labels and the checkboxes */
   .checkbox-wrapper label {
     margin-right: 10px;
+
   }
   
   /* Add a vertical line on the right side of the checkboxes */
@@ -36,7 +39,7 @@
     top: 0;
     right: -6px; /* Adjust this value to control the distance between checkboxes and the vertical line */
     height: 100%;
-    border-right: 1px solid #ccc; /* Add a thin line on the right side of the checkboxes */
+
   }
   
   /* Add styles for the product list container */
@@ -46,6 +49,8 @@
     flex: 1;
     padding-left: 20px; /* Add some space between the line and the product list */
     position: relative; /* Add position relative to the .product-list-container */
+    border-left: 1px solid #ccc; /* Add a thin line on the right side of the checkboxes */
+
   }
   
   /* Remove the vertical line after the product list container */
