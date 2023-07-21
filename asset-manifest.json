@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/blissful-buds/static/css/main.015331fb.css",
-    "main.js": "/blissful-buds/static/js/main.212d04f1.js",
+    "main.js": "/blissful-buds/static/js/main.68ef6f6f.js",
     "static/media/gummies.PNG": "/blissful-buds/static/media/gummies.d10022cd0a4df93d2e53.PNG",
     "static/media/edibles.PNG": "/blissful-buds/static/media/edibles.b6dea268ba0463d50498.PNG",
+    "static/media/china.jpg": "/blissful-buds/static/media/china.6a061808f47b10496952.jpg",
     "static/media/weed_for_login.png": "/blissful-buds/static/media/weed_for_login.a908906fece03246b353.png",
+    "static/media/medicinal.png": "/blissful-buds/static/media/medicinal.459576804e0349ec51fe.png",
     "static/media/logo.PNG": "/blissful-buds/static/media/logo.4654333e282e15cc581b.PNG",
     "index.html": "/blissful-buds/index.html",
     "main.015331fb.css.map": "/blissful-buds/static/css/main.015331fb.css.map",
-    "main.212d04f1.js.map": "/blissful-buds/static/js/main.212d04f1.js.map"
+    "main.68ef6f6f.js.map": "/blissful-buds/static/js/main.68ef6f6f.js.map"
   },
   "entrypoints": [
     "static/css/main.015331fb.css",
-    "static/js/main.212d04f1.js"
+    "static/js/main.68ef6f6f.js"
   ]
 }
