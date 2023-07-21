@@ -31,8 +31,8 @@ export default function BgHeaderHome() {
           left: 0,
           width: '100%',
           height: '100%',
-          backdropFilter: 'blur(10px)', // Adjust the blur amount as desired
-          backgroundColor: 'rgba(144, 238, 144, 0.5)', // Adjust the transparency (0.5 represents 50% transparency) and color (light green)
+          backdropFilter: 'blur(10px)', 
+          backgroundColor: 'rgba(144, 238, 144, 0.5)', 
         }}
       >
         <div
