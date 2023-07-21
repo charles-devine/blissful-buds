@@ -7,9 +7,7 @@ const AllProductsPage = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
 
   const handleFilterChange = (filters) => {
-    // Apply the filters to the products list and update the filteredProducts state
     if (filters.length === 0) {
-      // Show all products if no filters are selected
       setFilteredProducts(products);
     } else {
       const filteredProducts = products.filter((product) =>
@@ -33,7 +31,7 @@ const AllProductsPage = () => {
       setFilteredProducts(products); 
     } else { 
       const filteredProducts = products.filter((product) => {
-        const priceFilter = filters[0]; // Assuming you only allow one price range at a time
+        const priceFilter = filters[0];
         if (priceFilter === ' $0 - $4.99') {
           return product.price < 5;
         } else if (priceFilter === ' $4.99 - $9.99') {
