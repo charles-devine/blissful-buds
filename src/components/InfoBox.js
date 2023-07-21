@@ -78,7 +78,7 @@ export default function InfoBox() {
         <div className="box" style={{...boxStyle, backgroundColor: 'rgb(184, 232, 207)' }}>
           <img src={shop} alt="Image 3" style={imageStyle} />
           <h3 style={titleStyle}>Find a store near you</h3>
-          <Link to="/" className="btn btn-primary" style={buttonStyle}>Learn more</Link>
+          <Link to="https://www.google.com/maps/place/BlissfulBuds/@43.9593618,-79.9916661,8z/data=!3m1!4b1!4m6!3m5!1s0x89d51dcf3a0200f7:0x853ccbed349f4a49!8m2!3d43.9648425!4d-78.8705844!16s%2Fg%2F11t51dg_wq?entry=ttu" className="btn btn-primary" style={buttonStyle}>Learn more</Link>
         </div>
       </div>
     );

@@ -60,12 +60,12 @@ function Text() {
           
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '50px' }}>
             <Link to="/about">
-              <Button variant="primary" style={{ backgroundColor: 'black', color: '#f0f0f0', border: '1px solid #f0f0f0', fontSize: '12px', marginRight: '10px' }}>
+              <Button variant="primary" style={{ backgroundColor: 'white', color: '#000', border: '1px solid #000', fontSize: '12px', marginRight: '10px' }}>
                 About us
               </Button>
             </Link>
             <Link to="/">
-              <Button variant="secondary" style={{ backgroundColor: 'black', color: '#f0f0f0', border: '1px solid #f0f0f0', fontSize: '12px' }}>
+              <Button variant="secondary" style={{ backgroundColor: 'white', color: '#000', border: '1px solid #000', fontSize: '12px' }}>
                 Return Home
               </Button>
             </Link>

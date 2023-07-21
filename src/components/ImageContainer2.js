@@ -9,6 +9,9 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'; 
 import gummies from '../templates/gummies.PNG';
 
+import { Link } from 'react-router-dom'; // Import the Link component
+
+
 export default function ImageContainer2() {
     const ParentComponent2 = () => {
       return (
@@ -34,59 +37,60 @@ export default function ImageContainer2() {
     };
 
     const ExploreProductsCard = ({ title, imageUrl, link }) => {
-        return (
-          <div className="col-md-4">
-            <div className="card border-0">
-              <div style={{ height: '300px', overflow: 'hidden' }}>
-                <img
-                  src={imageUrl}
-                  className="card-img-top"
-                  alt={title}
-                  style={{
-                    objectFit: 'cover',
-                    height: '100%',
-                    width: '100%',
-                    borderBottomLeftRadius: '10px',
-                    borderBottomRightRadius: '10px',
-                  }}
-                />
-              </div>
-              <div className="card-body">
-                {link === "shop-flower" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Flower
-                  </a>
-                )}
-                {link === "shop-edibles" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Edibles
-                  </a>
-                )}
-                {link === "shop-topicals" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Topicals
-                  </a>
-                )}
-                {link === "shop-indica" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Indica
-                  </a>
-                )}
-                {link === "shop-sativa" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Sativa
-                  </a>
-                )}
-                {link === "shop-hybrid" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
-                    Shop Hybrid
-                  </a>
-                )}
-              </div>
+      return (
+        <div className="col-md-4">
+          <div className="card border-0">
+            <div style={{ height: '300px', overflow: 'hidden' }}>
+              <img
+                src={imageUrl}
+                className="card-img-top"
+                alt={title}
+                style={{
+                  objectFit: 'cover',
+                  height: '100%',
+                  width: '100%',
+                  borderBottomLeftRadius: '10px',
+                  borderBottomRightRadius: '10px',
+                }}
+              />
+            </div>
+            <div className="card-body">
+              {/* Replace the <a> tags with Link components */}
+              {link === "shop-flower" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Flower
+                </Link>
+              )}
+              {link === "shop-edibles" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Edibles
+                </Link>
+              )}
+              {link === "shop-topicals" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Topicals
+                </Link>
+              )}
+              {link === "shop-indica" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Indica
+                </Link>
+              )}
+              {link === "shop-sativa" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Sativa
+                </Link>
+              )}
+              {link === "shop-hybrid" && (
+                <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  Shop Hybrid
+                </Link>
+              )}
             </div>
           </div>
-        );
-      };
+        </div>
+      );
+    };
   
     const ImageTextContainer2 = () => {
       return (
@@ -120,11 +124,13 @@ export default function ImageContainer2() {
                   >
   
                     <div className="row">
-                      <div className="col-md-6" style={{ marginTop: '100px', color: '#fff', height: '550px' }}>
-                        <h3>Gummies Galore</h3>
-                        <p>Experience a journey of pure indulgence as each gummy delivers a precise dose of THC, ensuring a consistent and enjoyable experience every time. Whether you're seeking a relaxing evening unwind or an uplifting social adventure, our THC-infused gummies offer the perfect solution.</p>
-                        <Button variant="primary" style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', fontSize: '16px' }}>SHOP NOW</Button>
-                      </div>
+                        <div className="col-md-6" style={{ marginTop: '100px', color: '#fff', height: '550px' }}>
+                          <h3>Attention vape enthusiasts!</h3>
+                          <p>Discover the ultimate vaping experience with Evolab Vape Products! We're thrilled to present you with a line of top-notch vape products that will take your vaping game to a whole new level. Here's why you need to get your hands on our Evolab vapes.</p>
+                          <Link to='/products'>
+                            <Button variant="primary" style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', fontSize: '16px' }}>SHOP NOW</Button>
+                          </Link>
+                        </div>
                       <div className="col-md-6">
                         <img
                           src={gummies}

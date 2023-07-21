@@ -29,7 +29,6 @@ export default function NavBar2() {
                 <Link to="/responsibleuse" className="dropdown-item">Responsible Use</Link>
                 <Link to="/legaluse" className="dropdown-item">Legal Use</Link>
                 <Link to="/healtheffects" className="dropdown-item">Health Effects</Link>
-                <Link to="/youth" className="dropdown-item">Cannabis and Youth</Link>
                 <Link to="/ressources" className="dropdown-item">Additional Resources</Link>
               </DropdownButton>
             </li>

@@ -9,6 +9,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'; 
 import edibles from '../templates/edibles.PNG';
 
+import { Link } from 'react-router-dom'; // Import the Link component
+
 export default function ImageContainer() {
 
     const ParentComponent = () => {
@@ -33,8 +35,8 @@ export default function ImageContainer() {
           </div>
         );
       };
-
-    const ExploreProductsCard = ({ title, imageUrl, link }) => {
+     
+      const ExploreProductsCard = ({ title, imageUrl, link }) => {
         return (
           <div className="col-md-4">
             <div className="card border-0">
@@ -53,41 +55,43 @@ export default function ImageContainer() {
                 />
               </div>
               <div className="card-body">
+                {/* Replace the <a> tags with Link components */}
                 {link === "shop-flower" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Flower
-                  </a>
+                  </Link>
                 )}
                 {link === "shop-edibles" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Edibles
-                  </a>
+                  </Link>
                 )}
                 {link === "shop-topicals" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Topicals
-                  </a>
+                  </Link>
                 )}
                 {link === "shop-indica" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Indica
-                  </a>
+                  </Link>
                 )}
                 {link === "shop-sativa" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Sativa
-                  </a>
+                  </Link>
                 )}
                 {link === "shop-hybrid" && (
-                  <a href={link} className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
+                  <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     Shop Hybrid
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
           </div>
         );
       };
+      
   
       const ImageTextContainer = () => {
         return (
@@ -137,7 +141,9 @@ export default function ImageContainer() {
                         <div className="col-md-6" style={{ marginTop: '100px', color: '#fff', height: '550px' }}>
                           <h3>Attention vape enthusiasts!</h3>
                           <p>Discover the ultimate vaping experience with Evolab Vape Products! We're thrilled to present you with a line of top-notch vape products that will take your vaping game to a whole new level. Here's why you need to get your hands on our Evolab vapes.</p>
-                          <Button variant="primary" style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', fontSize: '16px' }}>SHOP NOW</Button>
+                          <Link to='/products'>
+                            <Button variant="primary" style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', fontSize: '16px' }}>SHOP NOW</Button>
+                          </Link>
                         </div>
                       </div>
                     </div>
