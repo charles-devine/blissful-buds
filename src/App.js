@@ -12,6 +12,8 @@ import LegalUse from './pages/LegalUse';
 import HealthEffects from './pages/HealthEffects';
 import Youth from './pages/Youth'; 
 import Contact from './pages/Contact'; 
+import Medicinal from './pages/Medicinal'; 
+import Cart from './pages/Cart';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
       <Route path="/youth" element={<Youth />} />
 
       <Route path="/contact" element={<Contact />} />
+      <Route path="/medicinal" element={<Medicinal />} />
+      <Route path="/cart" element={<Cart />} />
 
     </Routes>
   );

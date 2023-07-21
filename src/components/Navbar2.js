@@ -19,11 +19,15 @@ export default function NavBar2() {
               <Link to="/products" className="nav-link" style={{ color: 'black' }}>Products</Link>
             </li>
             <li className="nav-item">
+              <Link to="/medicinal" className="nav-link" style={{ color: 'black' }}>Medicinal</Link>
+            </li>
+            <li className="nav-item">
               <Link to="/about" className="nav-link" style={{ color: 'black' }}>Our Story</Link>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link" style={{ color: 'black' }}>Contact</Link>
             </li>
+            
             <li className="nav-item" style={{ fontSize: '14px' }}>
               <DropdownButton variant="light" title="Learn" id="dropdown-learn" menuAlign="left" menuVariant="light">
                 <Link to="/responsibleuse" className="dropdown-item">Responsible Use</Link>

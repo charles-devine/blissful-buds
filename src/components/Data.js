@@ -329,6 +329,29 @@
         price: 15.95, 
     },
   ];
+
+  const medicinalProducts = [
+    { 
+      id: 71, 
+      name: 'CannaMed Pain Re-leaf',
+      src: 'https://shop.ortho-nutrients.com/media/catalog/product/cache/2/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/c/a/cannamed_web.jpg', 
+      category: ' Medicinals', 
+      strain: ' Sativa', 
+      thc: '5.0mg', 
+      cbd: '2.3mg', 
+      price: 19.95, 
+    }, 
+    { 
+      id: 72, 
+      name: 'Pain Re-Leaf Cream THC',
+      src: 'https://d2j6dbq0eux0bg.cloudfront.net/images/17893556/1429298258.jpg', 
+      category: ' Medicinals', 
+      strain: ' Sativa', 
+      thc: '3.0mg', 
+      cbd: '2.3mg', 
+      price: 29.95, 
+    }
+  ]
   
   const allProducts = [
     ...driedFlowerProducts,
@@ -338,6 +361,7 @@
     ...extractsProducts,
     ...beveragesProducts,
     ...topicalsProducts,
+    ...medicinalProducts,
   ];
   
   const products = [

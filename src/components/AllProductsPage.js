@@ -67,6 +67,7 @@ const AllProductsPage = () => {
                 ' Extracts',
                 ' Beverages',
                 ' Topicals',
+                ' Medicinals',
               ]}
               onFilterChange={handleFilterChange}
             />

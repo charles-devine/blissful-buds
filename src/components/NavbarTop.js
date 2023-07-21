@@ -40,7 +40,7 @@ export default function NavbarTop() {
             <Link to="/products" className="nav-link" style={{ marginLeft: '10px' }}>Products</Link>
             <Link to="/faq" className="nav-link" style={{ marginLeft: '10px' }}>FAQ</Link>
             <Link to="/ressources" className="nav-link" style={{ marginLeft: '10px' }}>Resources</Link>
-            <Button variant="outline-success" style={{ marginLeft: '10px' }}><FaShoppingCart /></Button>
+            <Link to="/cart" className="nav-link" variant="outline-success" style={{ marginLeft: '10px' }}><FaShoppingCart /></Link>
             <Link to="/login" className="nav-link" style={{ marginLeft: '10px' }}>Login</Link>
           </Nav>
         </Navbar.Collapse>
