@@ -8,7 +8,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'; 
 import medicinal from '../templates/medicinal.png';
 
-import { Link } from 'react-router-dom'; // Import the Link component
+import { Link } from 'react-router-dom'; 
 
 export default function ImageContainer() {
     
@@ -60,7 +60,6 @@ export default function ImageContainer() {
                 />
               </div>
               <div className="card-body">
-                {/* Replace the <a> tags with Link components */}
                 {link === "shop-flower" && (
                   <Link to="/products" className="btn btn-primary" style={{ backgroundColor: 'transparent', color: '#000000', border: '1px solid #000000', fontSize: '12px' }}>
                     View our Medicinal Products
