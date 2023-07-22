@@ -9,7 +9,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button'; 
 import gummies from '../templates/gummies.PNG';
 
-import { Link } from 'react-router-dom'; // Import the Link component
+import { Link } from 'react-router-dom';
 
 
 export default function ImageContainer2() {
