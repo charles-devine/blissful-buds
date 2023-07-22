@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import './FacettedSearch.css'; // Import the CSS file for styling
+import './FacettedSearch.css';
 
 const FacettedSearch = ({ categories, strains, prices, onFilterChange }) => {
   const [selectedFilters, setSelectedFilters] = useState([]);
 
   const handleFilterToggle = (filter) => {
-    // Check if the filter is already selected, and add or remove it accordingly
     const updatedFilters = selectedFilters.includes(filter)
       ? selectedFilters.filter((selectedFilter) => selectedFilter !== filter)
       : [...selectedFilters, filter];
