@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import icon from '../templates/china.jpg'; // Update the path to your china.jpg image
+import icon from '../templates/china.jpg';
 
 function LanguageButton() {
   const { i18n } = useTranslation();
@@ -13,7 +13,6 @@ function LanguageButton() {
   return (
     <div style={{ textAlign: 'right', padding: '10px' }}>
       <button onClick={handleLanguageChange} style={{ width: '50px', height: '30px', background: 'transparent', border: 'none', cursor: 'pointer' }}>
-        {/* Replace the content of the button with the icon image */}
         <img src={icon} alt="Language Toggle Icon" style={{ width: '50px', height: '30px' }} />
       </button>
     </div>
