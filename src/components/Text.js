@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Text({ t }) { // Use t function from props
+function Text({ t }) { 
     return (
       <>
         <section style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'center', marginTop: '25px' }}>
